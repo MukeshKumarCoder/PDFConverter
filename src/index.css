@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@layer {
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+SA+Beginner:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+}
+
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+
+@theme {
+  --color-borderGray: #e5e7eb;
+  --color-hoverGray: #99a1af;
+  --color-textGray: #4a5565;
+}
