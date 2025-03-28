@@ -15,3 +15,7 @@ body {
   --color-hoverGray: #99a1af;
   --color-textGray: #4a5565;
 }
+
+h2{
+  font-weight: bold;
+}

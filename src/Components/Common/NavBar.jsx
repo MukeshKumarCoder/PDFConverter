@@ -6,9 +6,9 @@ import { NavLink } from "react-router-dom";
 import NavData from "../../Data/NavData.js";
 import IconBtn from "./IconBtn.jsx";
 
-const NavBar = () => {
+const NavBar = ({ setShowLogin }) => {
   return (
-    <nav className="h-[60px] flex justify-between items-center p-3 border-b border-borderGray fixed top-0 w-full bg-white z-50">
+    <nav className="h-[60px] flex justify-between items-center p-3 border-b border-borderGray fixed top-0 w-full bg-white z-20">
       <div className="flex item-center justify-center gap-x-10">
         <NavLink to={"/"} className="flex items-center justify-center gap-x-2 ">
           <img className="w-[2.5rem] h-[2.5rem] " src={logo} alt="Logo" />
@@ -48,12 +48,12 @@ const NavBar = () => {
         </div>
         <div className="w-[1px] h-[40px] bg-gray-200"></div>
         <div className="flex items-center gap-x-5">
-          <NavLink
-            to="/login"
-            className="text-textGray text-base hover:text-hoverGray"
+          <button
+            onClick={() => setShowLogin(true)}
+            className="text-textGray text-base cursor-pointer hover:text-hoverGray"
           >
             Log in
-          </NavLink>
+          </button>
           <IconBtn text={"Free Trial"} />
         </div>
       </div>
