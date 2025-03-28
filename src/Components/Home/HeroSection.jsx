@@ -1,5 +1,4 @@
 import React from "react";
-import Heading from "../Common/Heading";
 import { FaCircleCheck } from "react-icons/fa6";
 import IconBtn from "../Common/IconBtn";
 import heroImg from "../../assets/hero-business.png";

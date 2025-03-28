@@ -21,7 +21,7 @@ const FAQ = () => {
           >
             <button
               onClick={() => handleToggle(faq.id)}
-              className="flex justify-between px-10 w-full items-center cursor-pointer"
+              className="flex justify-between w-full items-center cursor-pointer"
             >
               <h2 className="text-xl font-semibold">{faq.question}</h2>
               <FaAngleUp
