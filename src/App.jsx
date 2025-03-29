@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="relative">
       <NavBar setShowLogin={setShowLogin} showLogin={showLogin} />
-      {showLogin && <Login setShowLogin={setShowLogin} />}
+      {showLogin && <Login setShowLogin={setShowLogin} showLogin={showLogin} />}
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/login" element={<Login />} /> */}
@@ -21,5 +21,3 @@ const App = () => {
 };
 
 export default App;
-
-
